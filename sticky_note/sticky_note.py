@@ -1,17 +1,8 @@
 import sqlite3
 import os
-# source_file = "C:\\Users\\ryan.lin\\Desktop\\New Text Document.txt"
-# end_file = "C:\\Users\\ryan.lin\\Desktop\\1.txt"
-#
-# sourcefile = open(source_file, encoding='UTF-8')
-# file_read = sourcefile.read().split("\n")
-# sourcefile.close()
-# endfile = open(end_file, 'w', encoding='UTF-8')
-# for value in file_read:
-#     endfile.write("{}\n".format(value[41:]))
-# endfile.close()
 
-file = "C:\\temp\\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\\LocalState\\plum.sqlite"
+username = os.environ.get("USERPROFILE")
+file = f"C:\\Users\\{username}\\AppData\\Local\\Packages\\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\\LocalState\\plum.sqlite"
 source_file = "C:\\temp\\sticky_notes.txt"
 notes_list = []
 notes_list_source = []
